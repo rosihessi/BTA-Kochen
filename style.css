@@ -40,6 +40,45 @@ button{
     border: none;
 
 }
+
+#hero{
+    background-image: url("img/intro.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.button{
+    background-color: #fff;
+    color: #374A67;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 2px #374A67 solid;
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
+    transition: all 0.4s ease;
+    margin-top: 1rem;
+    display: inline-block;
+
+
+}
+
+.button:hover{
+    color: #fff;
+    background-color: #374A67;
+    border-color: #fff;
+}
+
+
 @media (min-width: 1024px){
     nav {
         display: block;
