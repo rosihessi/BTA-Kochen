@@ -23,9 +23,10 @@ nav {
     display: none;
 }
 
-.show{
+.show {
     display: block;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -35,13 +36,12 @@ header {
     padding-right: 1rem;
 }
 
-button{
+button {
     background: none;
     border: none;
-
 }
 
-#hero{
+#textmittig {
     background-image: url("img/intro.jpg");
     height: 100vh;
     background-repeat: no-repeat;
@@ -49,13 +49,12 @@ button{
     background-position: center;
     color: #fff;
     text-align: center;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-
 }
-.button{
+
+.button {
     background-color: #fff;
     color: #374A67;
     text-decoration: none;
@@ -64,22 +63,62 @@ button{
     padding: 1rem;
     border-radius: 5px;
     border: 2px #374A67 solid;
-    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
     transition: all 0.4s ease;
     margin-top: 1rem;
     display: inline-block;
-
-
 }
 
-.button:hover{
+.button:hover {
     color: #fff;
     background-color: #374A67;
     border-color: #fff;
+    /* :hover der Doppelpunkt meldet ein Pseudoelement an, also, soll sich nur ändern, wenn der User mit der Maus drüber geht */
 }
 
+.card a {
+    /* ich rede hier so mit allen Links in der Karte */
+    text-decoration: none;
+    /* tilgt die Unterstreichung */
+    color: #000;
+}
 
-@media (min-width: 1024px){
+.card p a {
+    /* alle as in p in einer Karte bekommen andere Farbe als die anderen a in der Karte */
+    color: #b2b2b2;
+}
+
+.card {
+    text-align: center;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+
+    /* die width haben wir auf 40 % eingestellt, damit wir das mal auf dem screen anschaeun können */
+    overflow: hidden;
+    /* overflow hidden müssen wir dort einbauen, da das Bild sich nicht abrundet, sondern ein Überflußverhalten über die card hat */
+}
+
+.card img {
+    width: 100%;
+    /* Biild soll mitwachsen, wenn man die Karte größer macht */
+}
+
+.button.button-blue {
+    color: #fff;
+    background-color: #374A67;
+    border-color: #fff;
+    /* er hat hier alle Eigenschaften von oben button und button-blue */
+}
+
+.button.button-blue:hover {
+    /* bedeutet alle element, die sowowhl Klasse button und button blue haben und wenn der user drüber geht */
+    color: #374A67;
+    background-color: #fff;
+    border-color: #374a67;
+}
+
+#rezepte h2
+@media (min-width: 1024px) {
     nav {
         display: block;
     }
@@ -95,8 +134,8 @@ button{
     nav li {
         margin-right: 16px;
 
-    header{
-        padding-left: 5%;
-        padding-right: 5%;
+        header {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
     }
-}
