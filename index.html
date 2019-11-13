@@ -7,6 +7,7 @@
     <title>BTA Kochen | Kochen und Coden</title>
     <meta name="description" content="Leckere und gesunde Rezepte für Webworker.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -45,6 +46,7 @@
                 <h1>Die besten Rezepte für Webworker</h1>
                 <p>Es gibt mehr als Pizza und Ravioli</p>
                 <a href="#rezepte" class="button">Entdecke die Leckereien</a>
+                <!-- #rezepte ist eine Sprungmarke, wenn man langen Text hat, gelangt man beim Draufdrücken, weider nach oben -->
             </div>
 
         </section>
@@ -52,6 +54,94 @@
             <h2>Die neuesten Rezepte</h2>
             <div class="row">
                 <article class="card">
+                    <!-- wir bauen articel, sprich Rahmen nach row, weil es meheerer Cards gibt -->
+                    <a href="#"><img src="img/burger.jpg" alt="Burger">
+                        <!-- ich kann nur Bild in Link legen, also Reihenfolge a und dann img -->
+                    </a>
+                    <h3>
+                        <a href="#">
+                            Total leckerer Burger
+                        </a>
+                        <!-- habe Link in Überschrift gelegt, geht nur so -->
+                    </h3>
+
+                    <p>
+                        <a href="#">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum.
+                        </a>
+                        <!-- im Text sind Links eingebaut -->
+
+                    </p>
+
+                    <a href="#" class="button button-blue">Zum Rezept
+                    </a>
+                    <!-- das ist der Link für den Button unten -->
+                </article>
+                <article class="card">
+                    <!-- wir bauen articel, sprich Rahmen nach row, weil es meheerer Cards gibt -->
+                    <a href="#"><img src="img/burger.jpg" alt="Burger">
+                        <!-- ich kann nur Bild in Link legen, also Reihenfolge a und dann img -->
+                    </a>
+                    <h3>
+                        <a href="#">
+                            Total leckerer Burger
+                        </a>
+                        <!-- habe Link in Überschrift gelegt, geht nur so -->
+                    </h3>
+
+                    <p>
+                        <a href="#">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum.
+                        </a>
+                        <!-- im Text sind Links eingebaut -->
+
+                    </p>
+
+                    <a href="#" class="button button-blue">Zum Rezept
+                    </a>
+                    <!-- das ist der Link für den Button unten -->
+                </article>
+                <article class="card">
+                    <!-- wir bauen articel, sprich Rahmen nach row, weil es meheerer Cards gibt -->
+                    <a href="#"><img src="img/burger.jpg" alt="Burger">
+                        <!-- ich kann nur Bild in Link legen, also Reihenfolge a und dann img -->
+                    </a>
+                    <h3>
+                        <a href="#">
+                            Total leckerer Burger
+                        </a>
+                        <!-- habe Link in Überschrift gelegt, geht nur so -->
+                    </h3>
+
+                    <p>
+                        <a href="#">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum.
+                        </a>
+                        <!-- im Text sind Links eingebaut -->
+
+                    </p>
+
+                    <a href="#" class="button button-blue">Zum Rezept
+                    </a>
+                    <!-- das ist der Link für den Button unten -->
+                </article>
+                <article class="card">
+                    <!-- wir bauen articel, sprich Rahmen nach row, weil es meheerer Cards gibt -->
                     <a href="#"><img src="img/burger.jpg" alt="Burger">
                         <!-- ich kann nur Bild in Link legen, also Reihenfolge a und dann img -->
                     </a>
@@ -89,10 +179,65 @@
 
     </main>
 
+    <aside id="newsletter">
+        <!-- aside ist wie ein section, man könnte aside auch nnoch sektionieren ist ein Bereich der "neben"dem Main als Nebencontent steht     -->
+        <div class="end">
+            <h2>Kein Rezept mehr <br>
+                Hol Dir unseren Newsletter
+            </h2>
+
+            <form class="mail" action="" method="get">
+                <!-- hier kommt das Formular, in das ma sich für Newsletter einträgt; get zum Übertragen an den Server -->
+
+                <input type="email" name="email" value="" placeholder="Deine Emailadresse">
+                <!-- das ist das Eingabefeld für email w3scholls nachgeschaut bei form und input mit Platzhaltr deine emailadresse
+             <! -->
+                <button type="submit" name="abschicken" ido="abo" class="button">abonnieren</button>
+                <!-- das ist das Abonnierenformular, mit submit abschicken, alt. <input type="submit" name="" value="abonnieren"> -->
+                <!-- machen hier class button, um viel schreiben zu vermeiden da button schon mal definiert -->
+            </form>
+
+        </div>
+
+    </aside>
+
+    <footer id="footer">
+        <nav id="legalcrap">
+            <ul>
+                <li>
+                    <a href="#">Impressum</a>
+                </li>
+                <li>
+                    <a href="#">Datenschutz</a>
+
+                </li>
+                <li>
+                    <a href="#">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="social">
+            <ul>
+                <li class="icon-facebook">
+                    <a href="https://www.facebook.com" target="_blank">facebook</a>
+
+                </li>
+                <li class="icon-instagram">
+                    <a href="https://www.instagram.com" target="_blank">instagram</a>
+                </li>
+                <li class="icon-youtube">
+                    <a href="https://www.youtube.com" target="_blank">youtube</a>
+
+                </li>
+
+            </ul>
+        </nav>
+    </footer>
     <script src="js/menu.js">
 
     </script>
-
+    <!-- wenn ich mein password vergessen habe, kann ich es markieren und es bei html code von password auf text ändern -->
 
 
 

@@ -86,21 +86,28 @@ button {
 .card p a {
     /* alle as in p in einer Karte bekommen andere Farbe als die anderen a in der Karte */
     color: #b2b2b2;
+    padding: 1rem;
+    display: inline-block;
+    /* da a ein inlineelement ist akzeptiert er keine margin,kein padding daher display: inline-block plus browserproblem */
+    /* padding um den Text etwas einzurücken auf card */
 }
 
 .card {
     text-align: center;
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.75);
     border-radius: 5px;
-
     /* die width haben wir auf 40 % eingestellt, damit wir das mal auf dem screen anschaeun können */
     overflow: hidden;
-    /* overflow hidden müssen wir dort einbauen, da das Bild sich nicht abrundet, sondern ein Überflußverhalten über die card hat */
+    /* overflow hidden müssen wir dort einbauen, da das Bild sich nicht abrundet, sondern ein Überflußverhalten über die card hat, ich kann das zuviele einfach abschneiden */
+    /* overflow-y: scroll; */
+    /* Slider: liegen entwender alle hintereinander absolutpositionieren oder style="transform: translated3d" und overflow hidden(-) */
+    margin: 1rem;
+    /* Abstand zweischen den carden bei allen Formaten, cards klebten vorher aneinander und an der Seite */
 }
 
 .card img {
     width: 100%;
-    /* Biild soll mitwachsen, wenn man die Karte größer macht */
+    /* Bild soll mitwachsen, wenn man die Karte größer macht */
 }
 
 .button.button-blue {
@@ -108,6 +115,8 @@ button {
     background-color: #374A67;
     border-color: #fff;
     /* er hat hier alle Eigenschaften von oben button und button-blue */
+    margin: 1rem;
+    display: block;
 }
 
 .button.button-blue:hover {
@@ -117,13 +126,37 @@ button {
     border-color: #374a67;
 }
 
-#rezepte h2
+#abo {
+    display: inline-block;
+}
+
+.end {
+    background-color: #04122B;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    /* Hintergund blau gemacht und Schrift weiß und zentriert */
+}
+
+input {
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.end h2 {
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+
 @media (min-width: 1024px) {
     nav {
         display: block;
     }
 
-    button {
+    nav button {
         display: none;
     }
 
@@ -133,9 +166,20 @@ button {
 
     nav li {
         margin-right: 16px;
-
-        header {
-            padding-left: 5%;
-            padding-right: 5%;
-        }
     }
+
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .row {
+        display: flex;
+        /* display weil ich mit der Mutter row spreche; ich könnte auch float nehmen dann hätte ich card genommen */
+    }
+
+    .card {
+        margin: 1rem;
+        /* Abstand zwischen den Karten */
+    }
+}
