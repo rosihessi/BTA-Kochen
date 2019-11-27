@@ -19,13 +19,39 @@ ul {
     list-style-type: none;
 }
 
-nav {
+ header nav {
     display: none;
 }
 
 .show {
     display: block;
+    position:absolute;
+    /* mit position absolute kann ich Dinge rausheben */
+    top: 64px;
+    /* der Header ist 64px, daher soll sich der Text 64px wegdrücken, damit er nicht mehr im oberen weißen Feld ist */
+    background: #fff;
+    width:100%;
+    /* 50% -Breite vom Viewprotbreite */
+    left: 0;
+    /* hier left kein padding, da Balken und keine Text */
+    height: calc(100vh - 64px);
+    /* compi berechnet 100 % des viewports minus 64 px vom header */
+    /* bei calc Leerstellen beachten */
+    text-align: center;
+    line-height: 2rem;
 }
+
+.show ul{
+    padding: 0;
+}
+.overflow{
+    overflow: hidden;
+    /* diesen Code, weil cih nicht möchte, dass auf Handysicht von dort gecrollt wird; mann soll die Links von Home Repte Kategegorien etc. nutzen */
+}
+
+
+
+
 
 header {
     display: flex;
@@ -147,16 +173,37 @@ input {
 
 .end h2 {
     font-size: 1rem;
-    padding: 2rem;
+    padding: 3rem;
+
+}
+#social ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    /* alle Listen haben standarmäßig Padding, muss man auschalten */
+}
+#social ul li{
+        margin-left: 1rem;
+/* icon gehen auseinander */
+        font-size: 2rem;
+        /* wir hatten hier ein iconfont eingebunden, daher font size, wäre Bild dann mit widht */
+}
+
+#legalcrap ul{
+    text-align: center;
+    /* text-align center verteilt Text auf vorhandenen Platz */
+    /* icons reagieren nicht auf text-align, da sowieso sczhon in Boxen */
+    padding: 0;
 }
 
 
+
 @media (min-width: 1024px) {
-    nav {
+    header nav {
         display: block;
     }
 
-    nav button {
+    header button {
         display: none;
     }
 
@@ -182,4 +229,10 @@ input {
         margin: 1rem;
         /* Abstand zwischen den Karten */
     }
-}
+    #footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 5%;
+        /* liest von oben nach rechts, von 12 Uhr, 3 Uhr, 6 Uhr, 9 Uhr */
+        /* justify-content:verteilt den Platz auf x-Achse,(alin-item auf y-Achse)wir bewegen uns auf x-Achse und wollen auseinander */
+    }
